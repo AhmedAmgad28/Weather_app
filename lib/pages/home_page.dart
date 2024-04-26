@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Image.asset(weatherData!.getImage()),
                         Text(
-                          '${weatherData!.currentTemp.toInt()} C',
+                          '${weatherData!.temp.toInt()} C',
                           style: const TextStyle(
                               fontSize: 38, fontWeight: FontWeight.w700),
                         ),
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const Spacer(),
                   Text(
-                    weatherData!.tempState,
+                    weatherData!.weatherStateName,
                     style: const TextStyle(fontSize: 38, fontWeight: FontWeight.w700),
                   ),
                   const Spacer(
